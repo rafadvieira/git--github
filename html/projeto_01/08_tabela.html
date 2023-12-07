@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./image/download.jpeg" type="image/x-icon">
+    <title>Tabelas</title>
+</head>
+<body>
+    <!--thead, tbody, tfoot, ...-->
+    <div id="tabela">
+        <h1>Tabelas</h1>
+
+        <h2>Tabela Comum</h2>
+        <table border="1" width="250px">
+            <caption>Dados Pessoais</caption> <!--Titulo da tabela-->
+            <tr><!--Linhas-->
+                <th>Nome</th><!--Colunas - Titulo-->
+                <th>Idade</th>
+            </tr>
+            <tr>
+                <td>Rafaella</td><!--Coluna - dados-->
+                <td>42</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>66</td>
+            </tr>
+        </table>
+
+        <h2>Tabela com Colspan</h2>
+        <table border="1">
+            <caption>Agenda</caption>
+            <tr>
+                <th>Nome</th>
+                <th colspan="2">Telefones</th>
+            </tr>
+            <tr>
+                <td>Rafaella</td>
+                <td>85 997196229</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>85 999171098</td>
+                <td>85 999171098</td>
+            </tr>
+        </table>
+
+        <h2>Tabela com Rowspan</h2>
+        <table border="1">
+            <caption>Notas Bimestrais</caption>
+            <thead><!--cabecalho-->
+                <tr>
+                    <th>Bimestre</th>
+                    <th>Disciplina</th>
+                    <th>Nota</th>
+                </tr>
+            </thead>
+            <tbody> <!--Corpo-->
+                <tr>
+                    <td rowspan="4">1</td>
+                    <td>Geografia</td>
+                    <td>10.0</td>
+                </tr>
+                <tr>
+                    <td>História</td>
+                    <td>10.0</td>
+                </tr>
+                <tr>
+                    <td>Artes</td>
+                    <td>10.0</td>
+                </tr>
+                <tr>
+                    <td>Matemática</td>
+                    <td>10.0</td>
+                </tr>
+            </tbody>
+            <tfoot><!--Rodapé-->
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2>Tabela com Espaçamento</h2>
+        <table border="1" width="400px" cellpadding="15" cellspacing="0">
+            <caption>Dados Pessoais</caption>
+            <tr><!--Linhas-->
+                <th>Nome</th><!--Colunas - Titulo-->
+                <th>Idade</th>
+            </tr>
+            <tr>
+                <td>Rafaella</td><!--Coluna - dados-->
+                <td>42</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>66</td>
+            </tr>
+        </table>
+
+    </div>
+    
+</body>
+</html>

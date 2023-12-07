@@ -1,0 +1,269 @@
+/*Importar a Fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+/*Seletor Global*/
+*{
+    margin: 0; /*margem*/
+    padding: 0; /*espaçamento*/
+    box-sizing: border-box; /*tamanho das caixas*/
+    font-family: 'Roboto', sans-serif; /*fonte utilizada*/
+}
+
+/*FORMATAÇÃO DA PÁGINA LOGIN*/
+
+/*Seletor de tags*/
+#tela_login {
+    width: 100%;/*largura da tela*/
+    height: 100vh;/*altura da tela - altura já é 100% por padrão*/
+    display: flex;/*tipo de visualização*/
+    align-items: center;/*tipo de alinhamento da tela*/
+    justify-content: center;
+}
+
+figure, h1 {
+    text-align: center;
+}
+
+img {
+    -webkit-user-drag: none;/*em none para não mover a imagem*/
+}
+
+h1{
+    margin-bottom: 1rem; /*16px*/
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: inline-block; /*display de bloco em linha*/
+    width: 70px;
+}
+
+input {
+    font-size: 1.05rem;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    padding: 5px;
+}
+
+input[type=email], input[type=password]{
+    width: 250px;
+    margin-bottom: 1rem;
+    height: 1.5rem;
+}
+
+input[type=submit], input[type=reset]{
+    width: 130px;
+    height: 2.5rem;
+}
+
+input[type=submit]{
+    background: #1D495F;
+    color: #fff;
+}
+
+input[type=submit]:hover{
+    background: #cecece;
+    color: #1D495F;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+input[type=reset]{
+    background: #FF6600;
+    color: #fff;
+}
+
+input[type=reset]:hover{
+    background: #cecece;
+    color: #FF6600;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/*FORMATAÇÃO DA PÁGINA PERFIL*/
+
+#tela_perfil {
+    width: 720px;
+    height: 100vh;
+    font-size: 1.25rem;
+    margin: 0 auto; /*centralizar*/
+    color: #191919;
+}
+
+@media (max-width: 720px) {
+    #tela_perfil {
+        width: 90%;
+    }
+    #tela_perfil h1 {
+        font-size: 1.25rem;
+    }
+    #foto_perfil {
+        top: 10px;
+    }
+    .localizacao, #menu_top a {
+        font-size: 0.75rem;
+    }
+}
+
+#foto_perfil {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #fff;
+    border-radius: 100px;
+    box-shadow: 0px 0px 5px #ccc; /*sombra*/
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+figcaption {
+    display: none;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #191919;
+}
+
+header {
+    height: 350px;
+    background: #ececec;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px #ccc;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+#dados {
+    width: 100%;
+    margin-top: 120px;
+}
+
+blockquote {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 2px #ccc;
+}
+
+#locais {
+    line-height: 2rem; /*altura da linha*/
+    margin-top: 10px;
+    margin-left: 1.5rem;
+    font-size: 1rem;
+}
+
+.localizacao {
+    color: #222;
+}
+
+#menu_top {
+    float: right;
+}
+
+#menu_top a {
+    background: #1D495F;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+#menu_top a:hover {
+    text-decoration: underline;
+}
+
+section {
+    width: 100%;
+    background: #ececec;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+article {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem;
+    box-shadow: 0px 0px 5px #ccc;
+}
+
+article h2, #info-contatos h2 {
+    font-size: 1.85rem;
+    margin-bottom: 1rem;
+}
+
+article ul, article ol {
+    margin-left: 1.5rem;
+}
+
+article li {
+    line-height: 2.5rem;
+}
+
+#info-contatos h3 {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+#info-contatos p {
+    margin-top: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+#info-contatos a {
+    text-decoration: none;
+    color: #1D495F;
+}
+
+/*FORMATAÇÃO DO RODAPÉ*/
+
+#rodape {
+    margin-top: 1rem;
+    background: #ececec;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#menu_rodape {
+    padding: 2rem;
+}
+
+#menu_rodape ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+#menu_rodape a, #ir_para_topo {
+    text-decoration: none;
+    color: #1D495F;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#menu_rodape a:hover {
+    text-decoration: underline;
+    background: #fff;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+/*FORMATAÇÃO DE PROJETOS*/
+
+#header_projetos {
+    height: 120px;
+}
+
+.img_projeto {
+    border-radius: 10px;
+    width: 100%;
+}

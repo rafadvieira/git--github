@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Online - Formulário</title>
+</head>
+<body>
+    <div id="formulario">
+        <h1>Formulário</h1>
+
+        <form action="" method="POST" enctype="multipart/form-data">
+
+            <div> <!--tipo texto-->
+                <label for="nome">Nome</label>
+                <input 
+                    type="text" 
+                    name="nome" 
+                    id="nome"
+                    size="30"
+                    maxlength="20"
+                    required
+                    autofocus
+                />
+            </div>
+            <br/>
+            <div><!--tipos texto e number-->
+                <label for="endereco">Endereço</label>
+                <input 
+                    type="text" 
+                    name="endereco" 
+                    id="endereco"
+                    size="70"
+                    maxlength="50"
+                />
+                <input 
+                    type="number" 
+                    name="numero" 
+                    id="numero"
+                    step="1"
+                    min="1"
+                    max="100"
+                    readonly
+                    disabled
+                />
+            </div>
+            <br/>
+            <div><!--textarea-->
+                <label for="email">Observações</label>
+                <br/>
+                <textarea 
+                    name="obs"     
+                    id="obs" 
+                    cols="50" 
+                    rows="3"
+                    placeholder="Observações..."
+                ></textarea>
+            </div>
+            <br/>
+            <div><!--tipo de cor-->
+                <label for="cor">Cor</label>
+                <input 
+                    type="color" 
+                    name="cor" 
+                    id="cor"
+                />
+            </div>
+            <br/>
+            <div><!--tipo range-->
+                <label for="valor">Valor (entre 0 a 50):</label>
+                <input 
+                    type="range" 
+                    name="valor" 
+                    id="valor"
+                    min="0"
+                    max="50"
+                />
+            </div>
+            <br/>
+            <div><!--tipo search-->
+                <label for="pesquisar">Pesquisar:</label>
+                <input 
+                    type="search" 
+                    name="pesquisar" 
+                    id="pesquisar"
+                />
+            </div>
+            <br/>
+            <div><!--tipo data-->
+                <label for="data">Data:</label>
+                <input 
+                    type="date"     
+                    name="data" 
+                    id="data"
+                />
+            </div>
+            <br/>
+            <div><!--tipo file-->
+                <label for="myfile">Select a file:</label>
+                <input 
+                    type="file" 
+                    name="myfile" 
+                    id="myfile"
+                    multiple
+                />
+            </div>
+            <br/>
+            <div>
+                <!--tipo oculto-->
+                <input 
+                    type="hidden" 
+                    name=""
+                    value="Conteúdo Oculto"
+                />
+            </div>
+            <br/>
+            <div><!--tipo caixa de seleção - seleção multipla-->
+                <p>Botão Checkbox</p>
+                <input 
+                    type="checkbox" 
+                    name="vehicle1" 
+                    id="vehicle1"
+                    value="Bicicleta"
+                />
+                <label for="vehicle1">Bicicleta</label>
+                <br/>
+                <input 
+                    type="checkbox" 
+                    name="vehicle2" 
+                    id="vehicle2"
+                    value="Carro"
+                />
+                <label for="vehicle2">Carro</label>
+                <br/>
+                <input 
+                    type="checkbox" 
+                    name="vehicle3" 
+                    id="vehicle3"
+                    value="Moto"
+                    checked
+                />
+                <label for="vehicle3">Moto</label>
+                <br/>
+            </div>
+            <br/>
+            <div><!--tipo botão radio - seleção única-->
+                <p>Botão Rádio</p>
+                <p>Tem que usar o mesmo nome</p>
+                <input 
+                    type="radio" 
+                    name="fav_language" 
+                    id="html"
+                    value="HTML"
+                />
+                <label for="html">HTML</label>
+                <br/>
+                <input 
+                    type="radio" 
+                    name="fav_language" 
+                    id="css"
+                    value="CSS"
+                />
+                <label for="css">CSS</label>
+                <br/>
+                <input 
+                    type="radio" 
+                    name="fav_language" 
+                    id="javascript"
+                    value="JavaScript"
+                    checked
+                />
+                <label for="javascript">JavaScript</label>
+                <br/>
+            </div>
+            <br/><br/><br/>
+            <div><!--caixa de opções-->
+                <label for="profutos">Produtos</label>
+                <select name="produtos" id="prdutos">
+                    <optgroup label="Alimentos">
+                        <option value="Arroz">Arroz</option>
+                        <option value="feijão">Feijão</option>
+                        <option value="leite">Leite</option>
+                        <option value="acucar" selected>Açúcar</option>
+                    </optgroup>
+                </select>
+            </div>
+            <br/><br/>
+            <div>
+                <input 
+                    type="submit" 
+                    name="btnEnviar"
+                    id="btnEnviar"
+                    value="Enviar"
+                />
+                &nbsp;
+                <input 
+                    type="reset" 
+                    name="limpar"
+                    id="limpar"
+                    value="Limpar">
+            </div>
+            
+        </form>
+    </div>
+    
+</body>
+</html>

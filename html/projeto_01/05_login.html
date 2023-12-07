@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./image/download.jpeg" type="image/x-icon">
+    <title>Currículo Online - Login</title>
+</head>
+<body>
+    <div id="login">
+
+        <figure>
+            <img 
+            src="./image/download.jpeg" 
+            alt="Logo"
+            width="150px"
+        />
+        </figure>
+        
+        <h1>Logar</h1>
+
+        <form action="perfil.html" method="POST">
+            <div>
+                <label for="email">E-mail</label>
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="email"
+                    placeholder="email@provedor.com"
+                    autofocus
+                />
+            </div>
+            <br/>
+            <div>
+                <label for="senha">Senha</label>
+                <input 
+                    type="password" 
+                    name="senha" 
+                    id="senha"
+                    placeholder="senha"
+                />
+            </div>
+            <br/>
+            <div>
+                <input 
+                    type="submit" 
+                    name="btnEnviar" 
+                    id="btnEnviar" 
+                    value="Enviar"
+                />
+                &nbsp;
+                <input 
+                    type="reset" 
+                    name="limpar"
+                    id="limpar"
+                    value="Limpar"
+                />
+                <!--
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+                -->
+            </div>
+        </form>
+    </div>
+</body>
+</html>
