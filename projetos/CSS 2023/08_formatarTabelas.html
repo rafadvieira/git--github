@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 08 de CSS3</title>
+
+    <link rel="stylesheet" href="./css/style_aula08.css">
+</head>
+<body>
+    <main id="tela-principal">
+
+        <h1>Tabelas</h1>
+
+        <section class="conteudo">
+
+            <table id="tabela01">
+                <caption>Tabela 01 - nome e Idade</caption>
+                <thead> <!--Cabeçalho da tabela-->
+                    <tr>
+                        <th>Nº</th> <th>Nome</th> <th>Idade</th>
+                    </tr>
+                </thead>
+                <tbody> <!--Corpo da tabela-->
+                    <tr>
+                        <td>01</td> <td>Edson</td> <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>02</td> <td>Maitê</td> <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>03</td> <td>Maria</td> <td>66</td>
+                    </tr>
+                </tbody>
+                <tfoot> <!--Rodapé da tabela-->
+                    <tr>
+                        <td colspan="3">Produzido por Rafaella Vieira</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <table id="tabela02">
+                <caption>Tabela 02 - compras</caption>
+                <thead>
+                    <tr>
+                        <td>Produto</td> <td>Quant.</td> <td>Preço Unitário</td> <td>Preço Total</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Arroz</td> <td class="center">2</td> <td class="direita">4,99</td> <td class="direita">9,98</td>
+                    </tr>
+                    <tr>
+                        <td>Feijão</td> <td class="center">1</td> <td class="direita">9,97</td> <td class="direita">9,97</td>
+                    </tr>
+                    <tr>
+                        <td>Açucar</td> <td class="center">3</td> <td class="direita">3,99</td> <td class="direita">11,97</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total Geral</td> <td></td>
+                    </tr>
+                </tfoot>
+
+            </table>
+
+        </section>
+
+    </main>
+    
+</body>
+</html>

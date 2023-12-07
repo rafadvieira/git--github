@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/* Estilos da aula 07 Imagens */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #ececec;
+}
+
+main {
+    max-width: 100%;
+    height: 100vh;
+    margin: 0 auto; /*garatir que o conteudo ficará centralizado*/
+}
+
+/* Titulo h1 dentro da main */
+h1 {
+    text-align: center; /*alinha ao centro*/
+    font-size: 2rem; /*tamanho da letra*/
+    line-height: 3rem; /**/
+    margin: 2rem 0 0 0;
+    text-shadow: 1px 1px 1px #fff; /**/
+}
+
+p { 
+    text-align: center; 
+}
+
+/* section com class conteudo */
+.conteudo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* quebrar linha se tiver pouco espaço */
+}
+
+/* figure com class fotos */
+.fotos {
+    padding: 0.625rem;
+    /* definir largura maxima do container */
+    max-width: 960px;
+    margin: 0 auto; /* centralizar horizontal container */
+}
+
+/* imagens responsivas */
+img {
+    max-width: 100%;
+    display: block;
+    border: 8px solid #fff;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+.fotos img {
+    /* 1 ele se expanda, 1 flex-shrink, 200px base, largura se nao tiver quebra
+        fator               fator                  tamanho/largura
+        flex-grow (crescer) flex-shrink (diminuir) flex-basis
+    */
+    flex: 1 1 300px; /* largura minima da imagem */
+
+    /* margem entre os itens */
+    margin: 0.625rem;
+}
+
+.fotos img:hover {
+    transition: transform 1.5s; /* transicao */
+    transform: translateY(20px) rotate(10deg) scale(2); /* transformacao */
+    border: 3px solid #fff;
+	z-index: 999; /* profundidade */
+    cursor: pointer;
+}
+
+.fotos:first-child img:hover {
+    transition: transform 1s; /* transicao */
+    transform: translateY(15px) translateX(100px) rotate(20deg) scale(2); /* transformacao */
+}
+
+.fotos:last-child img:hover {
+    transition: transform 1s; /* transicao */
+    transform: translateY(20px) translateX(-100px) rotate(-10deg) scale(2); /* transformacao */
+}
+
+#foto06 {
+    border-radius: 50%;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula CSS</title>
+
+    <!--Importar Estilo-->
+    <link rel="stylesheet" href="./style.css">
+
+    <!--Importar Fonte-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav id="main-navbar">
+        <h1>Barra de Navegação</h1>
+    </nav>
+    <div id="container">
+        <h1>Meu Primeiro Site com CSS</h1>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quisquam reprehenderit voluptatibus nemo mollitia, explicabo, fugiat porro ipsum praesentium repellendus suscipit? Quae placeat optio labore exercitationem magni, perspiciatis veritatis alias!</p>
+    </div>
+
+    <section class="listas">
+        <h2>Redes Sociais</h2>
+        <ul>
+            <li><a href="https://twitter.com">Twitter</a></li>
+            <li><a href="http://instagram.com">Intagram</a></li>
+        </ul>
+    </section>
+
+    <section class="box">
+        <h2>Formulário</h2>
+        <form class="form" action="form.php" method="post">
+            <div class="form-group">
+                <label for="nome">Primeiro nome:</label>
+                <input type="text" placeholder="Digite seu nome">
+            </div>
+            <div class="form-group">
+                <label for="sobrenome">Segundo nome:</label>
+                <input type="text" placeholder="Digite seu sobrenome">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" placeholder="Digite seu e-mail">
+            </div>
+            <div class="form-group">
+                <label for="msg">Mensagem:</label>
+                <textarea name="msg" id="" cols="30" rows="5"></textarea>
+            </div>
+
+            <input class="buttom" type="submit"/>
+        </form>
+    </section>
+
+    <section>
+        <div class="relative box">
+            <div class="absolute">
+                <h2>Olá Mundo :)</h2>
+            </div>
+        </div>
+    </section>
+    
+    <button class="fixed">Fixed</button>
+
+    <section>
+        <div class="categories box">
+            <h2>Categorias</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

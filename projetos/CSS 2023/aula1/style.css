@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+
+    background-color: rgb(170, 142, 197);
+    color: rgb(104, 21, 21);
+
+    width: 80%;
+
+    /*margin: 150px;*/
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    /*padding: 20px;*/
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+
+    border: 5px solid #000000;
+    border-radius: 6px;
+}
+
+/*Listas*/
+.listas h2 {
+    margin-top: 20px;
+}
+
+.listas h2, .listas ul {
+    text-align: center;
+}
+
+.listas ul {
+    list-style: none;
+    padding: 15px;
+}
+
+.listas a {
+    text-decoration: none;
+}
+
+.listas a:hover {
+    color: red;
+}
+
+.listas a:visited {
+    color: green;
+}
+
+/*Formulário*/
+.box {
+    width: 80%;
+    margin: auto;
+}
+.box h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form {
+    margin: 20px;
+}
+
+.form .form-group {
+    padding-bottom: 10px;
+}
+
+.form .form-group label {
+    display: block;
+    font-weight: 200;
+}
+
+.form .form-group input {
+    padding: 8px;
+    width: 100%;
+}
+
+.buttom {
+    border: none;
+    padding: 10px;
+    background-color: #333;
+    color: azure;
+    transition: 0.5s;
+}
+
+.buttom:hover {
+    background-color: blue;
+}
+
+/*Posicionamento*/
+.relative {
+    position: relative;
+    border: 3px solid #333;
+    height: 500px;
+}
+
+.relative .absolute {
+    position: absolute;
+    bottom: 0;
+}
+
+/* Barra de Navegação */
+#main-navbar {
+    background-color: #333;
+    color: aliceblue;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.fixed {
+    background-color: #333;
+    color: #eee;
+    border-radius: 50%;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: none;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+
+/*pseudo- classe*/
+.categories ul {
+    list-style: none;
+}
+
+.categories ul li:first-child {
+    color: chocolate;
+}
+
+.categories ul li:last-child {
+    color: red;
+}
+
+.categories ul li:nth-child(3){
+    color: darkgoldenrod;
+}
+
+.categories ul li:nth-child(even){
+    background-color: aquamarine;
+}

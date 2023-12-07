@@ -1,0 +1,39 @@
+/* Seletor Global*/
+* {
+    margin: 0; /*margem*/
+    padding: 0; /*espaçamento*/
+}
+
+/*tag html*/
+body {
+    font-family: Arial, Verdana, Helvetica, sans-serif, "Times New Roman"; /*tipo da fonte*/
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px; /*tamanho da fonte*/
+    text-align: center; /*alinhar o texto*/
+}
+
+p {
+    font-size: 16px;
+    color: #afafaf; /*cor da fonte*/
+}
+
+/*Seletor de id*/
+#topo {
+    background: #ccc;/*cor de fundo do elemento*/
+}
+
+#rodape {
+    background: #da6565;
+}
+
+/*Seletor de class*/
+.assuntos {
+    background: #ececec;
+    /*background-color: bisque;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
